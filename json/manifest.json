@@ -1,0 +1,28 @@
+{
+  "name": "MyMusicApp",
+  "short_name": "MyMusicApp",
+  "start_url": "/",
+  "display": "fullscreen",
+  "background_color": "#000",
+  "theme_color":"white",
+  "orientation":"any",
+  "description": "A Music app with list function.",
+  "icons":[
+   
+    {
+      "src":"/asset/favicon_package_v0.16/android-chrome-512x512.png",
+      "sizes":"512x512"
+    },
+    {
+      "src":"/asset/favicon_package_v0.16/android-chrome-192x192.png",
+      "sizes":"192x192"
+    },
+    {
+      "src": "/asset/favicon_package_v0.16/mstile-150x150.png",
+      "sizes": "150x150",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+  
+}

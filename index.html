@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <title>My Music App</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link rel="manifest" href="json/manifest.json" />
+    <link rel="stylesheet" href="css/main.css" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme:lught)"
+      content="white"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme:dark)"
+      content="black"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-traslucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="My Music App" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="asset/favicon_package_v0.16/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="asset/favicon_package_v0.16/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="asset/favicon_package_v0.16/favicon-32x32.png"
+    />
+    <link rel="manifest" href="asset/favicon_package_v0.16/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="asset/favicon_package_v0.16/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header>My Music App</header>
+    <section id="addSong">
+      <h2>NEW SONGS</h2>
+      <label for="title">Title:</label>
+      <input type="text" name="title" id="title" required />
+      <label for="artist">Artist</label>
+      <input type="text" name="artist" id="artist" required />
+      <button id="addBtn">Add</button>
+    </section>
+    <section id="songsList">
+      <h2>LIST OF SONGS</h2>
+      <ul id="listContent"></ul>
+    </section>
+    <script>
+      firebase.initializeApp({
+        apiKey: "AIzaSyCA0pyxRhCJHTas6lUvydkB7L1kBJiDYQs",
+        authDomain: "info-6128-e3339.firebaseapp.com",
+        projectId: "info-6128-e3339",
+        storageBucket: "info-6128-e3339.appspot.com",
+        messagingSenderId: "236321873138",
+        appId: "1:236321873138:web:d07724b5701c7b3448c46b",
+        measurementId: "G-8F04ZSLQF6",
+      });
+      const db = firebase.firestore();
+    </script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
