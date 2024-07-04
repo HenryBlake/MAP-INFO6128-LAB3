@@ -12,14 +12,22 @@ db.collection("lab3")
 //   console.log(addBtn);
 // } else {
 //   console.log("failed to find btn");
-$("#addBtn").click(()=>{
-  console.log("hello")
-});
+
 // }
 addBtn.addEventListener("click",function(){
-  console.log("hello")
+  // console.log("hello")
+  emptyVal()
 })
 function emptyVal() {
   var titleContent = $("#title").html();
-  console.log(titleContent);
+  var artistContent=$("#artist").html();
+  if(titleContent==""){
+    alert("Please input title")
+  }
+
+  if(artistContent==""){
+    alert("Please input artist")
+  }
+  // console.log(titleContent);
+  
 }
