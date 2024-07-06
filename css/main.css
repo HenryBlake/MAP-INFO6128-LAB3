@@ -22,7 +22,10 @@
   h2 {
     background-color: blueviolet;
   }
-  button {
+  #listContent{
+    padding-left: 0;
+  }
+  #addBtn {
     display: block;
     width: 100px;
     height: 60px;
@@ -32,9 +35,41 @@
     border-radius: 3px;
     background-color: lightgray;
   }
-  button:hover {
+  #addBtn:hover {
     background-color: darkgray;
   }
+  .delete{
+    background-color: red;
+    margin-left: 10%;
+}
+.like{
+    background-color: blue;
+    margin-left: 30%;
+    color: white;
+}
+.list{
+    border: 2px solid black;
+    background-color: aquamarine;
+    width: 80%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+.title{
+    display: inline-block;
+    margin-left: 10%;
+}
+.likes{
+    display: inline-block;
+    padding-left: 20%;
+}
+.likes_num{
+    display: inline-block;
+}
+.artist{
+    margin-left: 20%;
+}
 }
 body {
   background-color: white;
@@ -59,7 +94,7 @@ label {
 h2 {
   background-color: blueviolet;
 }
-button {
+#addBtn {
   display: block;
   width: 100px;
   height: 60px;
@@ -69,6 +104,6 @@ button {
   border-radius: 3px;
   background-color: lightgray;
 }
-button:hover {
+#addBtn:hover {
   background-color: darkgray;
 }
